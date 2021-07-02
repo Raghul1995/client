@@ -17,8 +17,8 @@ const RandomFood = ({ filteredData, setFilterData, foodMenu }) => {
     return (
         <div>
             {/* <button onClick={handleClick} >Suprise Me !!</button> */}
-            {/* <SearchField /> */}
-            {/*<ItemsMenu randomNumber={randomNumber} />*/}
+            {/* <SearchField />*/}
+            {/*<ItemsMenu randomNumber={randomNumber}/>*/}
         </div>
     )
 }

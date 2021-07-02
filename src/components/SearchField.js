@@ -16,7 +16,7 @@ const SearchField = ({ filteredData, foodMenu, setFilterData }) => {
         <div>
             <div className="form">
                 <label className='form-label' >Search: </label>
-                <input type="text" onChange={(e) => handleSearch(e)} className='formInput' />
+                <input type="text" onChange={(e) => handleSearch(e)} className='formInput'/>
             </div>
             <div >
                 <ItemsMenu filteredData={filteredData} />

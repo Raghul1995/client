@@ -42,7 +42,7 @@ function App() {
           <Header />
           <SearchField filteredData={filteredData} foodMenu={foodMenu} setFilterData={setFilterData} />
           <Categories categories={categories} filterItems={filterItems} />
-          <RandomFood filteredData={filteredData} foodMenu={foodMenu} />
+          <RandomFood filteredData={filteredData} foodMenu={foodMenu}   />
         </div>
       </div>
     </main>

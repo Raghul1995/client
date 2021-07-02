@@ -10,9 +10,9 @@ function ItemsMenu({ filteredData, randomNumber }) {
                         <div className="item-info">
                             <header>
                                 <h4>{title} </h4>
-                                <h4 className="price">Kr {price}</h4>
+                                <h4 className="price">Kr  {price}</h4>
                             </header>
-                            <p className="item-text" >{desc}</p>
+                            <p className="item-text">{desc}</p>
                         </div>
                     </article>
                 );

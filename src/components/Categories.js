@@ -5,7 +5,7 @@ const Test = ({ categories, filterItems }) => {
         <div className="btn-container">
             {categories.map((unique, index) => {
                 return (
-                    <button type="button" className="filter-btn" key={index} onClick={() => filterItems(unique)}>
+                    <button type="button"  className="filter-btn" key={index} onClick={() => filterItems(unique)}>
                         {unique}
                     </button>
                 );
