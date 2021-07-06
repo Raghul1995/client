@@ -15,7 +15,8 @@ function App() {
   const fetchApi = async () => {
     const response = await fetch("http://localhost:4000/recipe/");
     const localhost = await response.json()
-    setFoodMenu(localhost.menu)
+    await setFoodMenu(localhost.menu)
+    filterItems("all")
   }
 
   const filterItems = (category) => {
@@ -42,7 +43,7 @@ function App() {
           <Header />
           <SearchField filteredData={filteredData} foodMenu={foodMenu} setFilterData={setFilterData} />
           <Categories categories={categories} filterItems={filterItems} />
-          <RandomFood filteredData={filteredData} foodMenu={foodMenu}   />
+          <RandomFood filteredData={filteredData} foodMenu={foodMenu} setFilterData={setFilterData} />
         </div>
       </div>
     </main>

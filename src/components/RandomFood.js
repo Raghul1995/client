@@ -4,21 +4,17 @@ import SearchField from './SearchField'
 
 const RandomFood = ({ filteredData, setFilterData, foodMenu }) => {
 
-    const [randomNumber, setRandomNumber] = useState(0)
     const handleClick = () => {
-        if (randomNumber !== 0) {
-            const randomize = Math.floor(Math.random() * foodMenu.length)
 
-            return setRandomNumber(randomize)
-        }
-
+        const randomize = Math.floor(Math.random() * foodMenu.length) + 1
+        const randomFood = foodMenu.filter(food => food.id === randomize)
+        console.log(randomFood)
+        setFilterData(randomFood)
     }
 
     return (
-        <div>
-            {/* <button onClick={handleClick} >Suprise Me !!</button> */}
-            {/* <SearchField />*/}
-            {/*<ItemsMenu randomNumber={randomNumber}/>*/}
+        <div className="btn-container" >
+            <button className="filter-btn" onClick={handleClick} >Suprise Me !!</button>
         </div>
     )
 }
